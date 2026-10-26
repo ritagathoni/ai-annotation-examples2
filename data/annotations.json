@@ -1,0 +1,70 @@
+[
+  {
+    "id": "A001",
+    "text": "The delivery date is 5 May according to the supplied order record.",
+    "source": "Synthetic order record: ETA 5 May",
+    "labels": {
+      "factuality": "supported",
+      "tone": "professional",
+      "safety": "safe"
+    },
+    "rationale": "Date directly matches source.",
+    "rater_a": {
+      "factuality": "supported"
+    },
+    "rater_b": {
+      "factuality": "supported"
+    }
+  },
+  {
+    "id": "A002",
+    "text": "The buyer signed the contract yesterday.",
+    "source": "Synthetic document does not include signature data",
+    "labels": {
+      "factuality": "unsupported",
+      "tone": "professional",
+      "safety": "safe"
+    },
+    "rationale": "Signature claim lacks evidence.",
+    "rater_a": {
+      "factuality": "unsupported"
+    },
+    "rater_b": {
+      "factuality": "not_verifiable"
+    }
+  },
+  {
+    "id": "A003",
+    "text": "Thank you for your message!",
+    "source": "Synthetic conversation",
+    "labels": {
+      "factuality": "not_verifiable",
+      "tone": "professional",
+      "safety": "safe"
+    },
+    "rationale": "Greeting has no factual claim requiring verification.",
+    "rater_a": {
+      "factuality": "not_verifiable"
+    },
+    "rater_b": {
+      "factuality": "not_verifiable"
+    }
+  },
+  {
+    "id": "A004",
+    "text": "The contract value is KES 50,000.",
+    "source": "Synthetic contract says KES 5,000",
+    "labels": {
+      "factuality": "unsupported",
+      "tone": "professional",
+      "safety": "safe"
+    },
+    "rationale": "Numeric mismatch with source.",
+    "rater_a": {
+      "factuality": "unsupported"
+    },
+    "rater_b": {
+      "factuality": "unsupported"
+    }
+  }
+]
